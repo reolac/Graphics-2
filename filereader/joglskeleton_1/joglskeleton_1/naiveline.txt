@@ -1,0 +1,22 @@
+        double dy = y2 - y1;
+        double dx = x2 - x1;
+        double m = dy / dx;
+        double c = y1 - m * x1;
+        
+     
+     gl.glBegin(GL.GL_POINTS);
+
+      
+
+        
+
+        for (int x = x1; x <= x2; ++x) {
+            double y = m * x + c;
+            gl.glVertex2d(x, y);
+        }
+              
+              
+        gl.glEnd();
+              
+
+    }
